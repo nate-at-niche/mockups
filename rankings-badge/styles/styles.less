@@ -1,0 +1,167 @@
+@import "../../shared/styles/variables.less";
+
+
+.hero-image-container {
+	background-image: url(hero-k12.jpg);
+	width: 100%;
+	height: 400px;
+	background-size: cover;
+	background-position: left;
+}
+
+.home-rankings-banner-wrap {
+	background-color: @green02;
+	width: 100%;
+	display: block;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	.home-rankings-banner {
+		max-width: 800px;
+		padding: 15px;
+		margin: 0 auto;
+
+		.schools-rankings-badge {
+			content: url(k12-badge.svg);
+			width: 120px;
+			position: absolute;
+			margin-left: 50%;
+		    top: -52px;
+    		left: -60px;
+			z-index: 90;
+		}
+
+		.just-released {
+			content: url(just-released-mobile.png);
+			height: 100px;
+			position: absolute;
+			top: -64px;
+			left: 5px;
+		    transition: all 0.3s linear;
+		}
+
+		.rankings-promo-copy {
+			margin: 70px 0 15px;
+
+			.title {
+				text-align: center;
+				font-size: 30px;
+				line-height: 28px;
+				color: #fff;
+			}
+
+			.body-copy {
+				text-align: center;
+				font-size: 16px;
+				line-height: 20px;
+				color: #fff;
+				margin-top: 10px;
+			}
+
+			.inverted.secondary.button {
+				background-color: @green02;
+				margin: 15px auto;
+				font-size: 16px;
+				display: block;
+				max-width: 180px;
+				
+
+				&:hover {
+					background-color: #fff;
+					color: @green02;
+				}
+			}
+		}
+	}
+}
+
+.school-search {
+	background-color: #fff;
+	padding: 30px 15px;
+	margin: 0 auto;
+
+	.section-title {
+		font-size: 40px;
+    	font-weight: 300;
+		color: @gray02;
+	}
+
+	.body-copy {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	img {
+		display: inline-block;
+    	vertical-align: middle;
+	    max-width: 100%;
+   	 	height: auto;
+   	 	margin-top: 15px;
+	}
+}
+
+@media (min-width: 500px) {
+	.home-rankings-banner-wrap {
+
+		.home-rankings-banner {
+
+			.just-released {
+				left: 90px;
+			}
+		}
+	}
+}
+
+
+@media (min-width: 650px) {
+
+	.home-rankings-banner-wrap {
+
+		.home-rankings-banner {
+
+			.schools-rankings-badge {
+				width: 175px;
+				margin-left: 0;
+			    top: 5px;
+	    		left: 120px;
+
+			}
+
+			.just-released {
+				left: 18px;
+			    top: 15px;
+				content: url(just-released-desktop.png);
+			}
+
+			.rankings-promo-copy {
+				margin: 15px 10px 20px 300px;
+
+				.title {
+					text-align: left;
+				}
+
+				.body-copy {
+					display: block;
+					text-align: left;
+				}
+
+				.inverted.secondary.button {
+					margin: 15px 0;
+					max-width: 180px;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+.hero-image-container {
+  background-image: url(hero-k12.jpg);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: left;
+}
+.home-rankings-banner-wrap {
+  background-color: #53a63a;
+  width: 100%;
+}
+.home-rankings-banner-wrap .home-rankings-banner {
+  max-width: 800px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.home-rankings-banner-wrap .home-rankings-banner .schools-rankings-badge {
+  content: url(k12-badge.svg);
+  width: 120px;
+  position: absolute;
+  margin-left: 50%;
+  top: -52px;
+  left: -60px;
+  z-index: 90;
+}
+.home-rankings-banner-wrap .home-rankings-banner .just-released {
+  content: url(just-released-mobile.png);
+  height: 100px;
+  position: absolute;
+  top: -64px;
+  left: 5px;
+  transition: all 0.3s linear;
+}
+.home-rankings-banner-wrap .home-rankings-banner .rankings-promo-copy {
+  margin: 70px 0 15px;
+}
+.home-rankings-banner-wrap .home-rankings-banner .rankings-promo-copy .title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 28px;
+  color: #fff;
+}
+.home-rankings-banner-wrap .home-rankings-banner .rankings-promo-copy .body-copy {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+.home-rankings-banner-wrap .home-rankings-banner .rankings-promo-copy .inverted.secondary.button {
+  background-color: #53a63a;
+  margin: 15px auto;
+  font-size: 16px;
+  display: block;
+  max-width: 180px;
+}
+.home-rankings-banner-wrap .home-rankings-banner .rankings-promo-copy .inverted.secondary.button:hover {
+  background-color: #fff;
+  color: #53a63a;
+}
+.school-search {
+  background-color: #fff;
+  padding: 30px 15px;
+  margin: 0 auto;
+}
+.school-search .section-title {
+  font-size: 40px;
+  font-weight: 300;
+  color: #464646;
+}
+.school-search .body-copy {
+  font-size: 16px;
+  line-height: 20px;
+}
+.school-search img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+}
+@media (min-width: 500px) {
+  .home-rankings-banner-wrap .home-rankings-banner .just-released {
+    left: 90px;
+  }
+}
+@media (min-width: 650px) {
+  .home-rankings-banner-wrap .home-rankings-banner .schools-rankings-badge {
+    width: 175px;
+    margin-left: 0;
+    top: 5px;
+    left: 120px;
+  }
+  .home-rankings-banner-wrap .home-rankings-banner .just-released {
+    left: 18px;
+    top: 15px;
+    content: url(just-released-desktop.png);
+  }
+  .home-rankings-banner-wrap .home-rankings-banner .rankings-promo-copy {
+    margin: 15px 10px 20px 300px;
+  }
+  .home-rankings-banner-wrap .home-rankings-banner .rankings-promo-copy .title {
+    text-align: left;
+  }
+  .home-rankings-banner-wrap .home-rankings-banner .rankings-promo-copy .body-copy {
+    display: block;
+    text-align: left;
+  }
+  .home-rankings-banner-wrap .home-rankings-banner .rankings-promo-copy .inverted.secondary.button {
+    margin: 15px 0;
+    max-width: 180px;
+  }
+}
